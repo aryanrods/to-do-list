@@ -11,13 +11,13 @@ function App() {
     if(input) {
       setTodos([...todos, input]);
       setInput('');
-    }
+    }};
 
     const handleRemoveTodo = (index) => {
       const updatedTodos = todos.filter((_,i) => i !== index);
       setTodos(updatedTodos);
     }
-  };
+  
 
 
 
