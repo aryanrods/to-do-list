@@ -25,12 +25,14 @@ function App() {
     <>
       <div className="app">
         <h1>To do List</h1>
-        <input type="text"
+       <div className="input">
+       <input type="text"
         value={input} 
         onChange={(e) => setInput(e.target.value)}
         placeholder='Add a new todo'/>
+     <button onClick={handleAddTodo}>Add</button></div>
       </div>
-      <button onClick={handleAddTodo}>Add</button>
+      
       <ul>
         {
           todos.map((todo,index) => (
